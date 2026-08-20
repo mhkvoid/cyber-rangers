@@ -1,0 +1,43 @@
+<section id="auth" class="screen auth-screen">
+  <div class="auth-box">
+    <div class="eyebrow">Secure access</div>
+
+    <h2 id="authTitle">Welcome back, Operative.</h2>
+
+    <p id="authMessage" class="description">
+      Continue your cybersecurity journey.
+    </p>
+
+    <form id="authForm">
+      <label>
+        Username
+        <input id="usernameInput" required />
+      </label>
+
+      <label>
+        Password
+        <input id="passwordInput" required type="password" />
+      </label>
+
+      <label id="confirmLabel" hidden>
+        Confirm password
+        <input id="confirmInput" type="password" />
+      </label>
+
+      <button id="authSubmit" class="primary" type="submit">
+        Log in
+      </button>
+    </form>
+
+    <button id="guestAuthButton" class="secondary full-width" type="button">
+      Continue as guest
+    </button>
+
+    <p class="switch">
+      <span id="switchText">New operative?</span>
+      <button id="switchAuthButton" type="button">
+        Create account
+      </button>
+    </p>
+  </div>
+</section>

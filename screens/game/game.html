@@ -1,0 +1,56 @@
+<section id="game" class="screen">
+  <div class="content panel">
+    <div class="eyebrow">Active mission</div>
+
+    <h2 id="gameTitle" class="title"></h2>
+
+    <p id="missionIntro" class="description"></p>
+
+    <div class="progress-wrap">
+      <label for="missionProgress">Mission progress</label>
+
+      <progress id="missionProgress" max="3" value="0"></progress>
+
+      <small id="progressText">0/3</small>
+    </div>
+
+    <p id="questionText" class="question"></p>
+
+    <div class="answer-grid">
+      <button class="card answer-card" type="button" data-answer="0">
+        <img id="optionImage0" alt="" />
+        <b id="optionText0"></b>
+        <small id="optionHint0"></small>
+      </button>
+
+      <button class="card answer-card" type="button" data-answer="1">
+        <img id="optionImage1" alt="" />
+        <b id="optionText1"></b>
+        <small id="optionHint1"></small>
+      </button>
+
+      <button class="card answer-card" type="button" data-answer="2">
+        <img id="optionImage2" alt="" />
+        <b id="optionText2"></b>
+        <small id="optionHint2"></small>
+      </button>
+    </div>
+
+    <div
+      id="feedback"
+      class="feedback"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <div class="controls">
+      <button id="nextButton" class="primary" type="button" disabled>
+        Next
+      </button>
+
+      <button class="secondary" type="button" data-screen="missions">
+        Back to missions
+      </button>
+    </div>
+  </div>
+</section>

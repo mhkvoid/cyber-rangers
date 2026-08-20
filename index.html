@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSafe Missions</title>
+
+    <!-- Shared styles used by every screen. -->
+    <link rel="stylesheet" href="core/base.css" />
+    <link rel="stylesheet" href="components/navigation/navigation.css" />
+    <link rel="stylesheet" href="components/mascot/mascot.css" />
+    <link rel="stylesheet" href="components/toast/toast.css" />
+
+    <!-- Each screen keeps its own styling close to its HTML and JavaScript. -->
+    <link rel="stylesheet" href="screens/home/home.css" />
+    <link rel="stylesheet" href="screens/auth/auth.css" />
+    <link rel="stylesheet" href="screens/missions/missions.css" />
+    <link rel="stylesheet" href="screens/game/game.css" />
+    <link rel="stylesheet" href="screens/results/results.css" />
+    <link rel="stylesheet" href="screens/progress/progress.css" />
+    <link rel="stylesheet" href="screens/achievements/achievements.css" />
+    <link rel="stylesheet" href="screens/card-deck/card-deck.css" />
+
+    <!-- One module starts the application after the page has loaded. -->
+    <script type="module" src="core/app.js"></script>
+  </head>
+
+  <body>
+    <div class="promo">
+      <b>New operative?</b>
+      Start your first mission free
+      <span>+ earn your first badge</span>
+    </div>
+
+    <div class="app-frame">
+      <!-- Navigation HTML is inserted here by core/app.js. -->
+      <div id="navigationMount"></div>
+
+      <!-- Every screen is loaded here; only one is visible at a time. -->
+      <main id="viewport" class="viewport" aria-live="polite"></main>
+    </div>
+
+    <!-- Shared, floating interface elements are mounted outside the app frame. -->
+    <div id="mascotMount"></div>
+    <div id="toastMount"></div>
+  </body>
+</html>

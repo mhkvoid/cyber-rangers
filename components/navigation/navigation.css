@@ -1,0 +1,16 @@
+/* Give the main navigation more vertical space. */
+.app-frame {
+  grid-template-rows: 74px 1fr;
+}
+
+.nav {
+  min-height: 74px;
+}
+
+/* Make nav bar text larger and easier to read. */
+.nav a,
+.nav-link {
+  font-size: 14px;      /* or 15–16px if you want it bigger */
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}

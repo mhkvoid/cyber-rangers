@@ -1,0 +1,4 @@
+/* Reduce the space between the navigation and missions panel. */
+#missions {
+  padding-top: 6px;
+}
